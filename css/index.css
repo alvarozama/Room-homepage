@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3em 0;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+}
+.header__hamburger {
+  display: block;
+  background-color: none;
+  border: none;
+  margin-left: 2em;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  left: 1em;
+}
+.header__hamburger:hover {
+  cursor: pointer;
+}
+.header__close {
+  display: none;
+  border: none;
+  margin-left: 2em;
+  background-color: rgba(255, 255, 255, 0);
+}
+.header__menu {
+  display: none;
+  list-style-type: none;
+  font-size: 0.9rem;
+  gap: 1.5em;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-right: 2em;
+}
+.header__menu-element-link {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+}
+.header__logo {
+  display: block;
+}
+
+.slide__text {
+  display: flex;
+  flex-direction: column;
+  padding: 4em 3.2em;
+  gap: 2em;
+}
+.slide__title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: hsl(0, 0%, 0%);
+}
+.slide__description {
+  font-size: 1rem;
+  color: hsl(0, 0%, 63%);
+  font-weight: 300;
+}
+.slide__shop {
+  display: flex;
+  gap: 1.5em;
+}
+.slide__shop-text {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+}
+.slide__shop-text:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 63%);
+}
+.slide__shop-arrow {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.slide {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 25.5em;
+  right: 0;
+}
+
+.button {
+  border: none;
+  background-color: hsl(0, 0%, 0%);
+  width: 4em;
+  padding: 1em;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(58, 56, 56);
+}
+
+.bottom__photo-1-img {
+  width: 375px;
+}
+.bottom__about {
+  padding: 4em 2.8em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.bottom__about-title {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+.bottom__about-info {
+  font-size: 1rem;
+  color: hsl(0, 0%, 63%);
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+.bottom__photo-2-img {
+  width: 375px;
+}
