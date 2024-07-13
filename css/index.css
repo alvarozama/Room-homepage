@@ -3,19 +3,9 @@
   padding: 0;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 body {
   font-family: "League Spartan", sans-serif;
   font-size: 12px;
-  height: 100vh;
 }
 
 .header {
@@ -40,17 +30,28 @@ body {
 .header__hamburger:hover {
   cursor: pointer;
 }
-.header__close {
+.header__nav--mobile {
   display: none;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: 3em;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  box-shadow: 10px 200px 1400px 1400px rgba(0, 0, 0, 0.56);
+}
+.header__nav--mobile-close {
   border: none;
   margin-left: 2em;
   background-color: rgba(255, 255, 255, 0);
+  margin-left: 3.2em;
 }
 .header__menu {
-  display: none;
+  display: flex;
   list-style-type: none;
   font-size: 0.9rem;
-  gap: 1.5em;
+  gap: 2em;
   font-weight: 600;
   text-transform: lowercase;
   margin-right: 2em;
@@ -63,14 +64,18 @@ body {
   display: block;
 }
 
+.slide__photo-img {
+  width: 100%;
+}
 .slide__text {
   display: flex;
   flex-direction: column;
-  padding: 4em 3.2em;
+  padding: 4em 3.6em;
   gap: 2em;
+  height: auto;
 }
 .slide__title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 2rem;
   color: hsl(0, 0%, 0%);
@@ -124,7 +129,7 @@ body {
 }
 
 .bottom__photo-1-img {
-  width: 375px;
+  width: 100%;
 }
 .bottom__about {
   padding: 4em 2.8em;
@@ -144,5 +149,15 @@ body {
   line-height: 1.4rem;
 }
 .bottom__photo-2-img {
-  width: 375px;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 5em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

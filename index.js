@@ -1,3 +1,16 @@
+// Nav Menu
+
+const mobileMenu = document.getElementById('mobile-menu');
+
+function openMenu() {
+        mobileMenu.style.display = 'flex';
+}
+function closeMenu() {
+    mobileMenu.style.display = 'none';
+}
+
+// Slideshow
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

@@ -10,13 +10,9 @@ $fontsize-p: 12px;
     padding: 0;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 body {
     font-family: "League Spartan", sans-serif;
     font-size: $fontsize-p;
-    height: 100vh;
 }
 
 .header {
@@ -43,18 +39,30 @@ body {
         cursor:pointer;
     }
 
-    &__close {
+    &__nav--mobile {
         display: none;
-        border: none;
-        margin-left: 2em;
-        background-color: rgba(255, 255, 255, 0);
+        background-color: $clr-white;
+        width: 100%;
+        padding: 3em;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        box-shadow: 10px 200px 1400px 1400px rgba(0,0,0,0.56);;
+
+        &-close {
+            border: none;
+            margin-left: 2em;
+            background-color: rgba(255, 255, 255, 0);
+            margin-left: 3.2em;
+        }
     }
 
     &__menu {
-        display: none;
+        display: flex;
         list-style-type: none;
         font-size: 0.9rem;
-        gap: 1.5em;
+        gap: 2em;
         font-weight: 600;
         text-transform: lowercase;
         margin-right: 2em;
@@ -71,16 +79,21 @@ body {
 }
 
 .slide {
+
+    &__photo-img {
+        width: 100%;
+    }
     
     &__text {
         display: flex;
         flex-direction: column;
-        padding: 4em 3.2em;
+        padding: 4em 3.6em;
         gap: 2em;
+        height: auto;
     }
 
     &__title {
-        font-size: 2.2rem;
+        font-size: 2rem;
         font-weight: 600;
         line-height: 2rem;
         color: $clr-black;
@@ -143,7 +156,7 @@ body {
     &__photo-1 {
         
         &-img {
-            width: 375px;
+            width: 100%;
         }
     }
 
@@ -170,8 +183,11 @@ body {
     &__photo-2 {
         
         &-img {
-            width: 375px;
+            width: 100%;
         }
     }
     
 }
+
+.attribution { font-size: 11px; text-align: center; margin-top: 5em;}
+.attribution a { color: hsl(228, 45%, 44%); }
