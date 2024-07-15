@@ -14,7 +14,6 @@ function closeMenu() {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -29,3 +28,13 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "flex";
   } 
+
+
+function toggleMenu() {
+
+  const menuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+  const menu = document.getElementById('mobile-menu');
+  const isExpanded = menuButton.getAttribute('aria-expanded') === 'true'; menuButton.setAttribute('aria-expanded', !isExpanded);
+  menu.hidden = isExpanded;
+}
+
